@@ -92,7 +92,12 @@ hr.RampBreak--l {
 
 .RampInputSelect--dropdown-container {
   display: none;
-  position: fixed;
+  /* if you would like the Options dropdown to move with its parent input as you scroll the page then just comment out line 96. */
+  /* position: fixed; */
+  /* However if you also want it to be displayed over below content then line 98 & 99 is the answer.  */
+  position: absolute;
+  z-index: 5;
+  
   width: 100%;
   max-width: 700px;
   border: 1px solid var(--color-darker-shade);
